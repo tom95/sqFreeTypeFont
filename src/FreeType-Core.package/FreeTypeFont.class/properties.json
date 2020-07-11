@@ -14,7 +14,8 @@
 		"bitmapCache",
 		"height",
 		"ascent",
-		"descent" ],
+		"descent",
+		"derivativeFonts" ],
 	"name" : "FreeTypeFont",
 	"pools" : [
 		 ],
