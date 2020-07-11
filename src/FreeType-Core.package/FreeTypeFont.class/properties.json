@@ -1,0 +1,22 @@
+{
+	"category" : "FreeType-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"library",
+		"face",
+		"pointSize",
+		"filename",
+		"subpixel",
+		"bitmapCache",
+		"height",
+		"ascent",
+		"descent" ],
+	"name" : "FreeTypeFont",
+	"pools" : [
+		 ],
+	"super" : "AbstractFont",
+	"type" : "normal" }

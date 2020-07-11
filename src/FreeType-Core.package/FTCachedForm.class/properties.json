@@ -1,0 +1,14 @@
+{
+	"category" : "FreeType-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"advance" ],
+	"name" : "FTCachedForm",
+	"pools" : [
+		 ],
+	"super" : "Form",
+	"type" : "normal" }
