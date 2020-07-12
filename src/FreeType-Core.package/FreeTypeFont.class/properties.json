@@ -8,6 +8,8 @@
 	"instvars" : [
 		"library",
 		"face",
+		"familyName",
+		"subfamilyName",
 		"pointSize",
 		"filename",
 		"subpixel",
@@ -15,7 +17,8 @@
 		"height",
 		"ascent",
 		"descent",
-		"derivativeFonts" ],
+		"derivativeFonts",
+		"emphasis" ],
 	"name" : "FreeTypeFont",
 	"pools" : [
 		 ],

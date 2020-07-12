@@ -1,0 +1,4 @@
+as yet unclassified
+startUp
+
+	FreeTypeFontRegistry invalidateFamilyLocationCache

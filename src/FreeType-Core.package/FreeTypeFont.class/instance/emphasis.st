@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 emphasis
 
-	^ TextEmphasis normal emphasisCode
+	^ emphasis ifNil: [0]

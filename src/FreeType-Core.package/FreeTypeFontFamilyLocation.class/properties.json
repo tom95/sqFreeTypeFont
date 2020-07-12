@@ -1,0 +1,16 @@
+{
+	"category" : "FreeType-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"familyName",
+		"baseFont",
+		"derivativeFonts" ],
+	"name" : "FreeTypeFontFamilyLocation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

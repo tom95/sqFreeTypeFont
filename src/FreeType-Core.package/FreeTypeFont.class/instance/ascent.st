@@ -1,4 +1,5 @@
-as yet unclassified
+accessing
 ascent
 
+	self assureLoaded.
 	^ ascent

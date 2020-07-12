@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 descentKern
 
 	self flag: #todo. "what does this mean?"

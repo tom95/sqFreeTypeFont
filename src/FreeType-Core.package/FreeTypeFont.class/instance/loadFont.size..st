@@ -11,6 +11,7 @@ loadFont: aFont size: aNumber
 		self checkError: (FreeTypeAPI new ftNewFace: library with: aFont with: 0 with: pointer).
 		array at: 1].
 	
-	self pointSize: aNumber.
+	self applyPointSize: aNumber.
 	
-	filename := aFont
+	familyName := self face familyName.
+	subfamilyName := self face styleName

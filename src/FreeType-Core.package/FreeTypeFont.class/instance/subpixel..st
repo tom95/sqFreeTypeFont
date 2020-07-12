@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 subpixel: aBoolean
 
 	subpixel := aBoolean

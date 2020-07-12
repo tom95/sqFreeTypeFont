@@ -1,0 +1,14 @@
+{
+	"category" : "FreeType-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"FontFamilyLocations" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FreeTypeFontRegistry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

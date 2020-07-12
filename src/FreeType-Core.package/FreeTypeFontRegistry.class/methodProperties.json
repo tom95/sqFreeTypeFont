@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"allFontsDo:" : "tobe 7/12/2020 19:18",
+		"checkFamilyLocationCache" : "tobe 7/12/2020 18:32",
+		"familyLocationForName:" : "tobe 7/12/2020 19:04",
+		"fileNameFor:emphasis:" : "tobe 7/12/2020 19:08",
+		"fontFamilyLocations" : "tobe 7/12/2020 18:28",
+		"invalidateFamilyLocationCache" : "tobe 7/12/2020 18:51",
+		"rebuildFamilyLocationCache" : "tobe 7/12/2020 18:38" },
+	"instance" : {
+		 } }

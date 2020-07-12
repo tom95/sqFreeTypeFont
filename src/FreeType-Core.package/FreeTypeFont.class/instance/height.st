@@ -1,4 +1,5 @@
-as yet unclassified
+accessing
 height
 
+	self assureLoaded.
 	^ height
