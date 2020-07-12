@@ -3,5 +3,4 @@ initialize
 
 	super initialize.
 	
-	subpixel := true.
-	bitmapCache := Dictionary new
+	subpixel := true

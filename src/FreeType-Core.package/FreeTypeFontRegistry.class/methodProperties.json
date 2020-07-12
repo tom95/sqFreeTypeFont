@@ -5,6 +5,8 @@
 		"familyLocationForName:" : "tobe 7/12/2020 19:04",
 		"fileNameFor:emphasis:" : "tobe 7/12/2020 19:08",
 		"fontFamilyLocations" : "tobe 7/12/2020 18:28",
+		"glyphCache" : "tobe 7/12/2020 19:22",
+		"glyphCacheAt:size:character:ifAbsentPut:" : "tobe 7/12/2020 22:51",
 		"invalidateFamilyLocationCache" : "tobe 7/12/2020 18:51",
 		"rebuildFamilyLocationCache" : "tobe 7/12/2020 18:38" },
 	"instance" : {

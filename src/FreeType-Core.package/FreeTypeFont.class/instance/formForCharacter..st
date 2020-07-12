@@ -1,7 +1,7 @@
 as yet unclassified
 formForCharacter: aCharacter
 
-	^ bitmapCache at: aCharacter ifAbsentPut: [ | glyph |
+	^ FreeTypeFontRegistry glyphCacheAt: self filename size: self pointSize character: aCharacter ifAbsentPut: [ | glyph |
 		glyph := (self glyphForCharacter: aCharacter prepareRender: true) unpackAsBitmap.
 		(glyph bitmap asFormColor: self subpixel)
 			offset: glyph left @ glyph top;

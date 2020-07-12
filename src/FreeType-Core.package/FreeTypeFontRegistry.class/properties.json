@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"FontFamilyLocations" ],
+		"FontFamilyLocations",
+		"GlyphCache" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
