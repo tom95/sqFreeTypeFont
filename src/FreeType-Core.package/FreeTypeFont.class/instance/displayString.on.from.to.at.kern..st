@@ -45,4 +45,21 @@ displayString: aString on: aDisplayContext from: startIndex to: stopIndex at: aP
 					rule: Form blend]].
 		
 		x := x + form advance x].
+	
+	(self emphasis bitAnd: TextEmphasis underlined emphasisCode) ~= 0 ifTrue: [
+		aDisplayContext
+			combinationRule: Form over;
+			colorMap: nil;
+			sourceForm: nil;
+			fillColor: aDisplayContext lastFontForegroundColor;
+			fillRect: (aPoint x @ (y + 2) extent: x - aPoint x @ 1) offset: 0 @ 0].
+	
+	(self emphasis bitAnd: TextEmphasis struckOut emphasisCode) ~= 0 ifTrue: [
+		aDisplayContext
+			combinationRule: Form over;
+			colorMap: nil;
+			sourceForm: nil;
+			fillColor: aDisplayContext lastFontForegroundColor;
+			fillRect: (aPoint x @ (y - (self ascent // 3)) extent: x - aPoint x @ 1) offset: 0 @ 0].
+	
 	^ x

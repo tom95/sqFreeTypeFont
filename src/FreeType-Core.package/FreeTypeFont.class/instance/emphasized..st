@@ -5,5 +5,5 @@ emphasized: aCode
 	derivativeFonts ifNil: [derivativeFonts := Array new: 32].
 	
 	^ (derivativeFonts at: aCode) ifNil: [ | font |
-		font := FreeTypeFont named: self familyName pointSize: 12 emphasis: aCode.
+		font := FreeTypeFont named: self familyName pointSize: self pointSize emphasis: aCode.
 		derivativeFonts at: aCode put: font]
