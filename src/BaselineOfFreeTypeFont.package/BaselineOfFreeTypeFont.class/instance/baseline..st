@@ -1,5 +1,6 @@
 baseline
 baseline: spec
+	<baseline>
 
 	spec for: #common do: [
 		spec package: 'FFI-Pools' with: [spec repository: 'http://source.squeakfoundation.org/FFI'].
