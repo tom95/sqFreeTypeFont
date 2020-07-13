@@ -1,6 +1,8 @@
 accessing
 blitGammaCorrectColored: aColor on: aDisplayContext at: aPoint
 
+	" code is currently not used and depends on the 3DTransforms package, so we comment it out for future reference
+	
 	| buffer pitch peek poker foregroundColor gamma |
 	buffer := self buffer getHandle.
 	pitch := self pitch.
@@ -25,4 +27,4 @@ blitGammaCorrectColored: aColor on: aDisplayContext at: aPoint
 					backgroundColor := Vector3 from32BitColor: (peek pixelAt: current).
 					
 					comp := ((foregroundColor raisedTo: 1.0 / gamma) * intensity) + ((backgroundColor raisedTo: 1.0 / gamma) * (1 @ 1 @ 1 - intensity)).
-					poker pixelAt: current put: (comp raisedTo: gamma) as32BitColor]]]
+					poker pixelAt: current put: (comp raisedTo: gamma) as32BitColor]]]"
