@@ -1,3 +1,4 @@
 OrderedDictionary {
-	'src/FreeType-Core.package' : #SquotCypressCodeSerializer
+	'src/FreeType-Core.package' : #SquotCypressCodeSerializer,
+	'src/BaselineOfFreeTypeFont.package' : #SquotCypressCodeSerializer
 }

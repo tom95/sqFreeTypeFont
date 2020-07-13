@@ -3,12 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"FontFamilyLocations",
-		"GlyphCaches" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "FreeTypeFontRegistry",
+		"fastGlyphCache",
+		"glyphCache" ],
+	"name" : "FreeTypeGlyphCache",
 	"pools" : [
 		 ],
 	"super" : "Object",

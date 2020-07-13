@@ -1,15 +1,14 @@
 {
-	"category" : "FreeType-Core",
+	"category" : "BaselineOfFreeTypeFont",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"FontFamilyLocations",
-		"GlyphCaches" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "FreeTypeFontRegistry",
+	"name" : "BaselineOfFreeTypeFont",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "BaselineOf",
 	"type" : "normal" }

@@ -1,7 +1,7 @@
 as yet unclassified
-glyphForCharacter: aCharacter prepareRender: aBoolean
+glyphForCharacter: aCharacter prepareRender: aBoolean do: aBlock
 
-	| glyph index |
+	| glyph index ret |
 	index := FreeTypeAPI new ftGetCharIndex: self facePtr with: (FTULong on: aCharacter asInteger).
 	self checkError: (FreeTypeAPI new
 		ftLoadGlyph: self facePtr
@@ -12,4 +12,6 @@ glyphForCharacter: aCharacter prepareRender: aBoolean
 		self checkError: (FreeTypeAPI new ftGetGlyph: self facePtr unpack glyph with: pointer).
 		array at: 1].
 	
-	^ glyph
+	ret := aBlock value: glyph.
+	FreeTypeAPI new ftDoneGlyph: glyph.
+	^ ret

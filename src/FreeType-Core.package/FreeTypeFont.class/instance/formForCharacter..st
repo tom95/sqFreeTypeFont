@@ -1,9 +1,10 @@
 as yet unclassified
 formForCharacter: aCharacter
 
-	^ FreeTypeFontRegistry glyphCacheAt: self filename size: self pointSize character: aCharacter ifAbsentPut: [ | glyph |
-		glyph := (self glyphForCharacter: aCharacter prepareRender: true) unpackAsBitmap.
-		(glyph bitmap asFormColor: self subpixel)
-			offset: glyph left @ glyph top;
-			advance: (self convert16x16: glyph root advance x value) @ (self convert16x16: glyph root advance y value)
-			yourself]
+	^ glyphCache at: aCharacter ifAbsentPut: [
+		self glyphForCharacter: aCharacter prepareRender: true do: [:glyph | | bitmapGlyph | 
+			bitmapGlyph := glyph unpackAsBitmap.
+			(bitmapGlyph bitmap asFormColor: self subpixel)
+				offset: bitmapGlyph left @ bitmapGlyph top;
+				advance: (self convert16x16: bitmapGlyph root advance x value) @ (self convert16x16: bitmapGlyph root advance y value)
+				yourself]]

@@ -14,4 +14,6 @@ loadFont: aFont size: aNumber
 	self applyPointSize: aNumber.
 	
 	familyName := self face familyName.
-	subfamilyName := self face styleName
+	subfamilyName := self face styleName.
+	
+	glyphCache := FreeTypeFontRegistry glyphCacheAt: aFont, ':', aNumber
