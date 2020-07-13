@@ -7,6 +7,14 @@ Note that the project has not been used much, so things may explode, leaving you
 
 Portability is given to a certain extent: fonts render and cache glyphs lazily. Only when a previously unrendered glyph is encountered, the system needs to be able to locate the font files according to the currently configured family name or fail critically. This will be improved in the future to gracefully fall back to other fonts.
 
+### Install
+```smalltalk
+Metacello new
+	baseline: 'FreeTypeFont';
+	repository: 'github://tom95/sqFreeTypeFont:master/src';
+	load
+```
+
 ### Examples
 For testing, open a Morph with an external font (adjust the path to match your system):
 ```smalltalk
