@@ -1,9 +1,10 @@
 as yet unclassified
 displayString: aString on: aDisplayContext from: startIndex to: stopIndex at: aPoint kern: kernDelta
 
-	| x y prevColorMap |
+	| x y prevColorMap useSubpixel |
 	x := aPoint x.
 	y := aPoint y + self ascent.
+	useSubpixel := aDisplayContext combinationRule = 37 " rgbMul, refers to installFreeTypeFont ".
 	
 	aString from: startIndex to: stopIndex do: [:char | | form |
 		form := self formForCharacter: char.
@@ -13,7 +14,7 @@ displayString: aString on: aDisplayContext from: startIndex to: stopIndex at: aP
 			
 			origin := x @ y + (form offset x @ form offset y negated).
 			
-			self subpixel ifTrue: [
+			(self subpixel and: [useSubpixel]) ifTrue: [
 				" for subpixel-AA, we do two passes:
 				our form is all white with black text (and rgb-subpixels around its edges)
 				so, we first rgbMul such that we get a black stencil of our final font essentially and

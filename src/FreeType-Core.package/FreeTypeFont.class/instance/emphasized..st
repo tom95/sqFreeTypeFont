@@ -6,4 +6,5 @@ emphasized: aCode
 	
 	^ (derivativeFonts at: aCode) ifNil: [ | font |
 		font := FreeTypeFont named: self familyName pointSize: self pointSize emphasis: aCode.
+		font assureLoaded.
 		derivativeFonts at: aCode put: font]
