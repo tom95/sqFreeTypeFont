@@ -8,6 +8,9 @@ Note that the project has not been used much, so things may explode, leaving you
 Portability is given to a certain extent: fonts render and cache glyphs lazily. Only when a previously unrendered glyph is encountered, the system needs to be able to locate the font files according to the currently configured family name or fail critically. This will be improved in the future to gracefully fall back to other fonts.
 
 ### Install
+
+Installation requires squeak-trunk (the new FFI needs the new immutability functions). If you get errors with the freetype library not being found, you may need to adjust your library load path, e.g. start Squeak via `env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu/" ./squeak.sh`.
+
 ```smalltalk
 Metacello new
 	baseline: 'FreeTypeFont';
