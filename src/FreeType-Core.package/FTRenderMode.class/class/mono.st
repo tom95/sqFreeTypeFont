@@ -1,4 +1,4 @@
 as yet unclassified
 mono
 
-	^ self on: 2
+	^ self fromHandle: 2

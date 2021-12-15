@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 	
-	subpixel := true
+	subpixel := true.
+	hasError := false

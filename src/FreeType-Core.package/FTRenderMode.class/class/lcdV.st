@@ -1,4 +1,4 @@
 as yet unclassified
 lcdV
 
-	^ self on: 4
+	^ self fromHandle: 4

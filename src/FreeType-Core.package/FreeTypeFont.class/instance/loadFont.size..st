@@ -1,19 +1,19 @@
 as yet unclassified
 loadFont: aFont size: aNumber
 
-	library := FTLibrary passArrayOfPointers: 1 to: [:pointer :array |
-		self checkError: (FreeTypeAPI new ftInitFreeType: pointer).
-		array at: 1].
+	library := FTLibrary allocate: 1.
+	self checkError: (FreeTypeAPI new ftInitFreeType: library).
+	library := library value.
 	
 	self checkError: (FreeTypeAPI new ftLibrarySetLcdFilter: library with: 1).
 	
-	face := FTFace passArrayOfPointers: 1 to: [:pointer :array |
-		self checkError: (FreeTypeAPI new ftNewFace: library with: aFont with: 0 with: pointer).
-		array at: 1].
+	face := FTFace allocate: 1.
+	self checkError: (FreeTypeAPI new ftNewFace: library with: aFont with: 0 with: face).
+	face := face value.
 	
 	self applyPointSize: aNumber.
 	
-	familyName := self face familyName.
-	subfamilyName := self face styleName.
+	familyName := self face familyName fromCString.
+	subfamilyName := self face styleName fromCString.
 	
 	glyphCache := FreeTypeFontRegistry glyphCacheAt: aFont, ':', aNumber

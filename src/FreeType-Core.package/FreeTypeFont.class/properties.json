@@ -18,7 +18,8 @@
 		"descent",
 		"derivativeFonts",
 		"emphasis",
-		"glyphCache" ],
+		"glyphCache",
+		"hasError" ],
 	"name" : "FreeTypeFont",
 	"pools" : [
 		 ],

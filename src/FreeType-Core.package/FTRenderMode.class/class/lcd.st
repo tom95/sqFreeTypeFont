@@ -1,4 +1,4 @@
 as yet unclassified
 lcd
 
-	^ self on: 3
+	^ self fromHandle: 3

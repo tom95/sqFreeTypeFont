@@ -1,4 +1,4 @@
 as yet unclassified
 light
 
-	^ self on: 1
+	^ self fromHandle: 1

@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"checkError:" : "tobe 7/9/2020 16:14",
-		"example" : "tobe 7/11/2020 19:05",
+		"example" : "tobe 12/15/2021 08:24",
 		"ftLoadForceAutohint" : "tobe 7/11/2020 19:10",
 		"ftLoadRender" : "tobe 7/11/2020 19:03",
 		"ftLoadTargetLCD" : "tobe 7/11/2020 19:05",
@@ -15,12 +15,12 @@
 	"instance" : {
 		"ftDoneGlyph:" : "tobe 7/13/2020 08:26",
 		"ftGetCharIndex:with:" : "tobe 7/10/2020 07:39",
-		"ftGetGlyph:with:" : "tobe 7/9/2020 16:08",
-		"ftGlyphToBitmap:with:with:with:" : "tobe 7/10/2020 07:43",
-		"ftInitFreeType:" : "tobe 7/9/2020 14:49",
+		"ftGetGlyph:with:" : "tobe 12/14/2021 14:47",
+		"ftGlyphToBitmap:with:with:with:" : "tobe 12/15/2021 08:25",
+		"ftInitFreeType:" : "tobe 12/14/2021 10:48",
 		"ftLibrarySetLcdFilter:with:" : "tobe 7/10/2020 20:18",
 		"ftLoadChar:with:with:" : "tobe 7/11/2020 19:02",
 		"ftLoadGlyph:with:with:" : "tobe 7/9/2020 15:19",
-		"ftNewFace:with:with:with:" : "tobe 7/9/2020 15:36",
-		"ftSetCharSize:with:with:with:with:" : "tobe 7/11/2020 11:15",
+		"ftNewFace:with:with:with:" : "tobe 12/14/2021 14:44",
+		"ftSetCharSize:with:with:with:with:" : "tobe 12/14/2021 14:41",
 		"ftSetPixelSizes:with:with:" : "tobe 7/9/2020 15:37" } }

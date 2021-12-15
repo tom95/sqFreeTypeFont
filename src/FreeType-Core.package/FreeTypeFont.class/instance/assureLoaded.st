@@ -1,7 +1,13 @@
 as yet unclassified
 assureLoaded
 
+	hasError ifTrue: [^ nil].
+	
 	face ifNil: [ | name |
 		name := self filename.
-		name ifNil: [self error: 'The requested font could not be found on your system'].
-		self loadFont: name size: pointSize]
+		name ifNil: [
+			hasError := true.
+			^ FTNotFoundError new signal].
+		[self loadFont: name size: pointSize] on: FTAPIError do: [:e |
+			hasError := true.
+			e signal]]
